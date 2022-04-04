@@ -4,13 +4,22 @@ description = "Hiasi situs anda dengan favicon SVG yang unik."
 categories = ["customizing"]
 tags = ["color", "style", "graphics", "branding"]
 feature = ["code highlighter", "snippets", "related content"]
+[[copyright]]
+  owner = "VHS"
+  date = "2019"
+  license = "agpl-3.0-or-later"
 +++
 
-After Dark dikirimkan dengan 169B yang dioptimalkan [^1] SVG favicon tertanam di setiap halaman:
+After Dark dikirimkan dengan 169B yang dioptimalkan[^1] SVG favicon tertanam di setiap halaman:
 
+<details>
+<summary>Perluas untuk melihat kode</summary>
 {{< highlight html >}}
 {{< include "themes/after-dark/layouts/partials/head/favicon.html" >}}
 {{< /highlight >}}
+</details>
+
+{{% hackcss-alert type="info" %}}**Catatan**: HTML (Go) Komentar template yang dilucuti selama generasi situs.{{% /hackcss-alert %}}
 
 Favicon adalah segitiga miring berwarna hitam dalam bentuk tepee seperti yang ditunjukkan[^2] di [Bantuan Online](../online-help) [Overview](/). Pusat segitiga menggunakan ruang negatif untuk memberikan ilusi segitiga sama sisi kedua dalam bentuk piramida, atau api terbuka, yang terkandung di dalam.
 
@@ -65,6 +74,12 @@ Jika file belum ada, salin darii tema default:
 ```sh
 $ mkdir -p layouts/partials/head
 $ cp themes/after-dark/layouts/partials/head/favicon.html layouts/partials/head
+```
+
+Ganti SVG dengan grafik lain jika diinginkan:
+
+```html
+<link rel="icon" sizes="128x128" href="/favicon.png">
 ```
 
 Jika mengoptimalkan pengalaman platform lakukan dari dalam `favicon.html`:

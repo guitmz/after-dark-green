@@ -1,38 +1,45 @@
 #
-# Hugo Dockerfile for After Dark
+# Copyright (C) 2019  VHS <vhsdev@tutanota.com>
 #
-# After Dark is free and open source software you can use to create a
-# privacy-aware website, blog or app.
+# This file is part of After Dark.
 #
-# Read the docs (https://after-dark.habd.as/)
-# View the code (https://git.habd.as)
+# After Dark is free software: you can redistribute it and/or modify
+# it under the terms of the GNU Affero General Public License as published
+# by the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
 #
-# Copyright (C) 2018 Josh Habdas <jhabdas@protonmail.com>
+# After Dark is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU Affero General Public License for more details.
 #
-# This work is free. You can redistribute it and/or modify it under the
-# terms of the Do What The Fuck You Want To Public License, Version 2,
-# as published by Sam Hocevar. See the COPYING file for more details.
+# You should have received a copy of the GNU Affero General Public License
+# along with this program.  If not, see <https://www.gnu.org/licenses/>.
 #
 
-# DOCKER-VERSION 17.12.0-ce, build c97c6d6
+# DOCKER-VERSION 19.03.5, build 633a0ea
 
-# Pull hugo builder base image
-FROM golang:1.10.3-alpine3.7 AS hugobuilder
+# Specify build image
+ARG GO_VERSION=1.13.4
+ARG BUILD_TARGET=alpine3.10
 
-# Set environment variables for hugo build
-ENV HUGO_VERSION=0.44 \
-    CGO_ENABLED=0 \
-    GOOS=linux
+# Pull builder base image
+FROM golang:${GO_VERSION}-${BUILD_TARGET} AS hugobuilder
 
-# Build hugo from source using specified version
+# Set environment variables
+ENV HUGO_VERSION=0.61.0 \
+    CGO_ENABLED=1 \
+    GOOS=linux \
+    GO111MODULE=on \
+    BUILD_TAGS="extended"
+
+# Build from source using specified version
 RUN \
-  apk add --update --no-cache git musl-dev && \
+  apk add --update --no-cache git gcc g++ && \
   git clone https://github.com/gohugoio/hugo.git $GOPATH/src/github.com/gohugoio/hugo && \
   cd ${GOPATH:-$HOME/go}/src/github.com/gohugoio/hugo && \
   git checkout v$HUGO_VERSION && \
-  go get github.com/golang/dep/cmd/dep && \
-  dep ensure -vendor-only && \
-  go install -ldflags '-s -w'
+  go install -ldflags '-s -w -extldflags "-static"' -tags ${BUILD_TAGS}
 
 # Move compiled binary into own container
 FROM scratch

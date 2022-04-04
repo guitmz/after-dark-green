@@ -6,18 +6,19 @@ summary = "Responsive PhotoSwipe Image Galleries."
 categories = ["addon"]
 tags = ["module", "images", "graphics", "engagement"]
 features = ["related content", "snippets", "section menu"]
+[[copyright]]
+  owner = "VHS"
+  date = "2019"
+  license = "agpl-3.0-or-later"
 +++
 
 **PhotoSwipe Homepage:** {{< external "http://photoswipe.com" />}}<br>
-**Module Source:** {{< external "https://git.habd.as/comfusion/hall-of-mirrors" />}}
+**Module Source:** {{< external "https://codeberg.org/vhs/hall-of-mirrors" />}}
 
 ## Demo
 
 {{< hackcss-alert >}}
-  <video controls preload="auto" width="100%">
-    <source src="https://jhabdas.keybase.pub/after-dark-hall-of-mirrors-demo.mp4" type="video/mp4">
-    <p>Your browser doesn't support HTML5 video. Here is a <a href="https://jhabdas.keybase.pub/after-dark-hall-of-mirrors-demo.mp4">link to the video</a> instead.</p>
-  </video>
+  {{< video controls="true" preload="auto" src="https://vhs.codeberg.page/code/after-dark/assets/after-dark-hall-of-mirrors-demo.mp4" width="100%" >}}
 {{< /hackcss-alert >}}
 
 ## Installation
@@ -26,7 +27,7 @@ Choose a module download source:
 
 - {{< external "https://www.npmjs.com/package/hall-of-mirrors" />}}
 - {{< external "https://www.jsdelivr.com/package/npm/hall-of-mirrors" />}}
-- {{< external "https://git.habd.as/comfusion/hall-of-mirrors" />}}
+- {{< external "https://codeberg.org/vhs/hall-of-mirrors" />}}
 
 Extract module contents into site `themes` directory:
 
@@ -47,4 +48,4 @@ theme = [
 ]
 {{< /highlight >}}
 
-See {{< external href="https://git.habd.as/comfusion/hall-of-mirrors/src/branch/master/README.md" text="README.md" />}} to confirm you're using the minimum required version of After Dark; and module setup, configuration and usage instructions. If you need help you may {{< external href="https://git.habd.as/comfusion/hall-of-mirrors/issues" text="Submit an Issue" />}} with your question.
+See {{< external href="https://codeberg.org/vhs/hall-of-mirrors/src/branch/trunk/README.md" text="README.md" />}} to confirm you're using the minimum required version of After Dark; and module setup, configuration and usage instructions. If you need help you may {{< external href="https://codeberg.org/vhs/hall-of-mirrors/issues" text="Submit an Issue" />}} with your question.

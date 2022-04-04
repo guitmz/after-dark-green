@@ -4,6 +4,10 @@ description = "Verify you are using genuine After Dark software."
 categories = ["security"]
 tags = ["validate", "privacy", "security", "cryptography", "npm", "git"]
 features = ["code highlighter", "related content"]
+[[copyright]]
+  owner = "VHS"
+  date = "2019"
+  license = "agpl-3.0-or-later"
 +++
 
 After Dark utilizes the {{< external href="https://www.npmjs.com" text="NPM" />}} CLI to produce a unique cryptographic hash each release, enabling any copy to be uniquely identified regardless of its source.
@@ -17,7 +21,7 @@ Release hashes use the <abbr title="Secure Hashing Algorithm">SHA-512</abbr> alg
 
 Each release a new hash is generated in the following locations:
 
-- Embedded using PGP in the {{< external href="https://git.habd.as/comfusion/after-dark/releases" text="release source" />}} `git tag` message.
+- Embedded using PGP in the {{< external href="https://codeberg.org/vhs/after-dark/releases" text="release source" />}} `git tag` message.
 - Codified into the {{< external href="https://registry.npmjs.org/after-dark/latest" text="latest" />}} or {{< external href="https://registry.npmjs.org/after-dark/6.7.9" text="version-specific" />}} NPM package metadata.
 - Embedded inside the After Dark [Online Help](../online-help) documentation.
 

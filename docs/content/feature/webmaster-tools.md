@@ -4,6 +4,10 @@ description = "Test and submit your site with popular search engines."
 categories = ["search"]
 tags = ["SEO", "robots", "metadata"]
 features = ["code highlighter", "related content", "snippets"]
+[[copyright]]
+  owner = "VHS"
+  date = "2019"
+  license = "agpl-3.0-or-later"
 +++
 
 ## Webmaster verification
@@ -65,4 +69,5 @@ Monitor performance over time using {{< external href="https://speedtracker.org"
 
 ## Additional services
 
+- {{< external "https://webmaster.yandex.com/tools/robotstxt/" />}}
 - {{< external "https://w3c.github.io/developers/tools/" />}}

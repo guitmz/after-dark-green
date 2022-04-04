@@ -1,5 +1,5 @@
 +++
-title = "Quick Install"
+title = "Instal Cepat"
 description = "Hanya satu perintah yang anda butuhkan untuk membuat website baru."
 categories = ["core"]
 tags = ["setup", "installation", "scripts"]
@@ -8,43 +8,42 @@ notes = [
   "mengulas 'module-system' saat menambah atau menghapus add-on yang telah di instal",
   "juga meninjau pilihan modul yang sudah dipasang sebelumnya (lihat masalah di depan)"
 ]
+[[copyright]]
+  owner = "VHS"
+  date = "2019"
+  license = "agpl-3.0-or-later"
 +++
 
-After Dark termasuk skrip instalasi portabel untuk pengaturan cepat:
+After Dark termasuk skrip instalasi portabel untuk pengaturan cepat. Silahkan instal {{< external href="https://gohugo.io" text="Hugo" />}} `0.51` atau yang lebih besar sebelum menjalankan skrip:
 
-{{< hackcss-card header="themes/after-dark/bin/install" >}}
-<style>.card-content .inner { overflow: scroll; max-height: 30em; }</style>
+{{< hackcss-alert >}}
 <details itemscope itemtype="https://schema.org/SoftwareSourceCode">
 <summary>Perluas untuk melihat skrip</summary>
 {{< highlight shell "linenos=inline" >}}
 {{< include "themes/after-dark/bin/install" >}}
 {{< /highlight >}}
-<link itemprop="codeRepository" href="https://git.habd.as/comfusion/after-dark">
+<link itemprop="codeRepository" href="https://codeberg.org/vhs/after-dark">
 <meta itemprop="codeSampleType" content="script">
 <meta itemprop="programmingLanguage" content="sh">
 <meta itemprop="runtimePlatform" content="busybox">
-<link itemprop="targetProduct" href="https://after-dark.habd.as">
+<link itemprop="targetProduct" href="https://vhs.codeberg.page/after-dark">
 <meta itemprop="accessMode" content="textual">
 </details>
-{{< /hackcss-card >}}
-
-Silahkan instal {{< external href="https://gohugo.io" text="Hugo" />}} `0.44` atau yang lebih besar sebelum menjalankan skrip.
+{{< /hackcss-alert >}}
 
 <!--more-->
 
-Skrip telah diuji pada Debian, BusyBox dan Darwin, dan seharusnya juga dapat bekerja di bawah Alpine, Ubuntu, Docker dan Windows melalui {{< external href="http://cmder.net" text="Cmder" />}} tanpa ketergantungan tambahan.
+Skrip telah diuji pada GNU/Linux dan BSD (Darwin) dan Windows melalui {{< external href="http://cmder.net" text="Cmder" />}}.
 
-{{% hackcss-alert type="warning" %}}**Warning:** selalu periksa skrip yang diunduh dari internet sebelum menjalankannya secara lokal. Jika anda memilih untuk tidak menjalankan skrip [Unduh secara manual](/#download).{{% /hackcss-alert %}}
+{{% hackcss-alert type="warning" %}}**Warning:** Periksa skrip yang diunduh dari Internet sebelum menjalankannya.{{% /hackcss-alert %}}
 
-Jalankan skrip sesuka anda. Berikut adalah metode yang memungkinkan:
+Berikut adalah tiga metode untuk men-download dan menjalankan:
 
 1. Unduh dan kirim ke `sh` secara langsung:
 
     {{< hackcss-alert >}}
-    {{< highlight shell >}}wget -qO - https://go.habd.as/after-dark | sh{{< /highlight >}}
+    {{< highlight shell >}}wget -qO - https://codeberg.org/vhs/after-dark/raw/branch/trunk/bin/install | sh{{< /highlight >}}
     {{< /hackcss-alert >}}
-
-    <i>(Cojones not included.)</i>
 
 2. Unduh di file baru, `chmod` dan jalankan:
 
@@ -53,12 +52,10 @@ Jalankan skrip sesuka anda. Berikut adalah metode yang memungkinkan:
 chmod +x install && ./install{{< /highlight >}}
     {{< /hackcss-alert >}}
 
-    <i>(It's safe if it comes from a CDN, amirite?)</i>
-
 3. Dari kanonik `git` klon:
 
     {{< hackcss-alert >}}
-    {{< highlight shell >}}# sumber klon dan ubah ke direktori sumber git klon https://git.habd.as/comfusion/after-dark.git && cd "$_"
+    {{< highlight shell >}}# sumber klon dan ubah ke direktori sumber git klon https://codeberg.org/vhs/after-dark.git && cd "$_"
 
 # gunakan npm cli untuk mendapatkan hash rilis
 echo "${$(npm run integrity)#*sha512-}"
@@ -68,17 +65,17 @@ echo "${$(npm run integrity)#*sha512-}"
 {{< /highlight >}}
     {{< /hackcss-alert >}}
 
-    <i>(<a href="/feature/release-hashes/">Release Hashes</a> may be used for code validation.)</i>
-
 Skrip harus selesai dalam 5-10 detik sehingga menghasilkan sampel situs dan dokumen bantuan:
 
 {{< figure alt="After Dark screenshots"
   src="/images/quick-install.png"
   lqipsrc="/images/quick-install-fs8.png"
-  caption="After Dark Quick Install running to completion in Terminal on macOS Mojave."
+  caption="After Dark Quick Install running to completion in Terminal on Deepin Manjaro."
 >}}
 
-# Konfigurasi multi situs
+Situs baru Anda akan disebut `flying-toaster`. Ubah ke nama proyek anda kapan saja anda suka. Akses situs dengan menavigasi ke https://localhost:1313.
+
+# Konfigurasi Multi-situs (Lanjutan)
 
 After Dark memungkingkan menjalankan manajemen multi situs dari satu instalasi. Untuk mengelola beberapa website gunakan `-c` dan `-d` bendera untuk menentukan konten dan tujuan direktori secara berurutan.
 

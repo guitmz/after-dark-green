@@ -6,6 +6,10 @@ tags = ["controls"]
 html_attributes = ["id", "name", "class", "autocomplete", "autofocus", "disabled", "form", "formaction", "formmethod", "formtarget", "height", "max", "maxlength", "min", "minlength", "multiple", "pattern", "placeholder", "readonly", "required", "size", "spellcheck", "step", "tabindex", "type", "value", "width"]
 custom_attributes = []
 snippets_used = ["text input", "label", "form group", "form", "help block"]
+[[copyright]]
+  owner = "VHS"
+  date = "2019"
+  license = "agpl-3.0-or-later"
 +++
 
 Basic usage:
@@ -45,14 +49,14 @@ In [Form Group](../form-group) with warning [Label](../label) and [Help Block](.
 ```html
 {{</* hackcss-formgroup state="warning" >}}
   {{< hackcss-label for="key64" text="64-bit PGP key:" />}}
-  {{< hackcss-textinput type="text" id="key64" >}}
+  {{< hackcss-textinput spellcheck="false" type="text" id="key64" >}}
   {{< hackcss-helpblock text="In this format: BB73 67EE 9A70 A631" />}}
 {{< /hackcss-formgroup */>}}
 ```
 
 {{< hackcss-formgroup state="warning" >}}
   {{< hackcss-label for="key64" text="64-bit PGP key:" />}}
-  {{< hackcss-textinput type="text" id="key64" >}}
+  {{< hackcss-textinput spellcheck="false" type="text" id="key64" >}}
   {{< hackcss-helpblock text="In this format: BB73 67EE 9A70 A631" />}}
 {{< /hackcss-formgroup >}}
 

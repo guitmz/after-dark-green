@@ -6,6 +6,10 @@ tags = ["controls"]
 html_attributes = ["id", "value", "name", "class", "onclick", "tabindex", "target", "disabled", "form"]
 custom_attributes = ["type", "text", "isghost", "isblock", "action", "method"]
 snippets_used = ["button", "button group", "throbber", "form", "external"]
+[[copyright]]
+  owner = "VHS"
+  date = "2019"
+  license = "agpl-3.0-or-later"
 +++
 
 Different types:
@@ -66,7 +70,7 @@ Text in body:
 {{% hackcss-button type="success" %}}~~Markdown~~{{% /hackcss-button %}}
 {{< hackcss-button isghost="true" text="Comment" >}}Hidden comment{{< /hackcss-button >}}
 
-In [Button Group](..button-group):
+In [Button Group](../button-group):
 
 ```html
 {{</* hackcss-buttongroup >}}
@@ -113,12 +117,12 @@ Print preview:
 [External](../external) navigation:
 
 ```html
-{{</* external rel="shortlink" href="https://go.habd.as/mavic-air" >}}
+{{</* external rel="shortlink" href="https://vhs.codeberg.page/mavic-air" >}}
   {{< hackcss-button type="success" text="Open" />}}
 {{< /external */>}}
 ```
 
-{{< external rel="shortlink" href="https://go.habd.as/mavic-air" >}}
+{{< external rel="shortlink" href="https://vhs.codeberg.page/mavic-air" >}}
   {{< hackcss-button type="success" text="Open" />}}
 {{< /external >}}
 

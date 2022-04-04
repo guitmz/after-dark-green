@@ -4,9 +4,13 @@ description = "Memuat skrip dan gaya eksternal dengan kecepatan luar biasa."
 categories = ["experience"]
 tags = ["performance", "styles"]
 feature = ["snippets", "related content", "code highlighter"]
+[[copyright]]
+  owner = "VHS"
+  date = "2019"
+  license = "agpl-3.0-or-later"
 +++
 
-After Dark menggunakan {{< external rel="external help" href="https://git.habd.as/jhabdas/fetch-inject" text="Fetch Inject" />}} pustaka untuk memuat dan menjalankan skrip dan gaya ekesternal lebih cepat dari yang dapat dilakukan browser.
+After Dark menggunakan {{< external rel="external help" href="https://codeberg.org/vhs/vhs/fetch-inject" text="Fetch Inject" />}} pustaka untuk memuat dan menjalankan skrip dan gaya ekesternal lebih cepat dari yang dapat dilakukan browser.
 
 {{< external href="https://hackcabin.com/post/managing-async-dependencies-javascript/" text="Fetch Injection" />}} terkonsep dan dikembangkan untuk After Dark agar memungkinkan tautan dalam ke ukuran penuh [Galeri Gambar](/module/hall-of-mirrors) gambar tanpa memblokir pemuatan halaman dan memilki kinerja aplikasi lainnya:
 
@@ -22,7 +26,7 @@ After Dark menggunakan {{< external rel="external help" href="https://git.habd.a
     </tr>
   </thead>
   <tbody>
-    <td>{{< external href="https://habd.as/talks/screaming-fast-wordpress-redis-vultr/" text="WordPress Twenty Seventeen" />}}</td>
+    <td>{{< external href="https://vhs.codeberg.page/talks/screaming-fast-wordpress-redis-vultr/" text="WordPress Twenty Seventeen" />}}</td>
     <td>~3.600s</td>
     <td>~0.918s</td>
   </tbody>
@@ -65,4 +69,4 @@ Anda dapat memuat Bootstrap (w/Font Awesome) dan menunjukkan berapa lama itu sel
 </script>
 {{< /highlight >}}
 
-Fetch Inject adalah 555 bytes terkompresi, non-blocking dan disertakan secara default pada [Custom Layouts](../custom-layouts). Kunjungi {{< external href="https://codepen.io/jhabdas/pen/MpVeOE?editors=0012" text="CodePen Playground" />}} untuk mencobanya.
+Fetch Inject adalah 555 bytes terkompresi, non-blocking dan disertakan secara default pada [Custom Layouts](../custom-layouts). Kunjungi {{< external href="https://codepen.io/vhs/pen/MpVeOE?editors=0012" text="CodePen Playground" />}} untuk mencobanya.

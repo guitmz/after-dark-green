@@ -1,30 +1,19 @@
 {
   "name": "after-dark",
-<<<<<<< HEAD
-<<<<<<< HEAD
-  "version": "7.0.3",
-=======
-  "version": "7.2.1",
->>>>>>> upstream/master
-  "description": "Semantic Design System for Hugo.",
-=======
-  "version": "7.2.4",
-  "description": "Build Fast Websites with Hugo.",
->>>>>>> upstream/master
-  "author": "Josh Habdas <jhabdas@protonmail.com> (https://habd.as)",
+  "version": "10.1.0",
+  "description": "A retro dark theme for Hugo.",
+  "author": "VHS <vhsdev@tutanota.com> (https://vhs.codeberg.page)",
   "keywords": [
     "hugo",
-    "hackcss",
-    "lazysizes",
-    "lodash",
-    "vue",
-    "fuse.js",
-    "mark.js"
+    "dark",
+    "theme",
+    "website",
+    "blog"
   ],
-  "homepage": "https://after-dark.habd.as",
+  "homepage": "https://vhs.codeberg.page/after-dark",
   "repository": {
     "type": "git",
-    "url": "https://git.habd.as/comfusion/after-dark.git"
+    "url": "https://codeberg.org/vhs/after-dark.git"
   },
   "standard-version": {
     "scripts": {
@@ -32,26 +21,34 @@
     }
   },
   "scripts": {
-    "update:lazysizes": "npm up lazysizes && cp -i node_modules/lazysizes/lazysizes.min.js static/js",
+    "update:lazysizes": "pnpm up lazysizes && cp -i node_modules/lazysizes/lazysizes.min.js static/js",
     "update:lodash:custom": "./node_modules/.bin/lodash include=debounce -p -o static/js/lodash.custom.min.js",
-    "update:fuse": "npm up fuse.js && cp -i node_modules/fuse.js/dist/fuse.min.js static/js",
-    "update:vue": "npm up vue && cp -i node_modules/vue/dist/vue.min.js static/js",
-    "update:mark": "npm up mark.js && cp -i node_modules/mark.js/dist/mark.min.js static/js",
-    "update:hackcss": "npm up hackcss && cp -ir node_modules/hack/dist/ assets/css/vendor/hack/",
+    "update:fuse": "pnpm up fuse.js && cp -i node_modules/fuse.js/dist/fuse.js static/js/fuse.min.js",
+    "update:vue": "pnpm up vue && cp -i node_modules/vue/dist/vue.min.js static/js",
+    "update:mark": "pnpm up mark.js && cp -i node_modules/mark.js/dist/mark.min.js static/js",
+    "update:hackcss": "pnpm up hackcss && cp -ir node_modules/hack/dist/ assets/css/vendor/hack/",
+    "update:fetch-inject": "pnpm up fetch-inject && cp -i node_modules/fetch-inject/fetch-inject.min.js static/js/modules/fetch-inject.min.js",
     "test": "while true; do head -n 100 /dev/urandom; sleep 0.1; done | hexdump -C | grep 'ca fe'",
-    "integrity": "npm pack --dry-run --json . | grep integrity | cut -d ',' -f1 | cut -d ':' -f2 | tr -d '\" '",
+    "integrity": "pnpm pack --dry-run --json . | grep integrity | cut -d ',' -f1 | cut -d ':' -f2 | tr -d '\" '",
     "release": "standard-version"
   },
   "devDependencies": {
     "atom-one-chroma": "^2.0.0",
-    "fetch-inject": "^2.0.2",
-    "fuse.js": "^3.3.0",
+    "commitizen": "^4.2.2",
+    "cz-conventional-changelog": "^3.3.0",
+    "fetch-inject": "^3.2.0",
+    "fuse.js": "^6.4.5",
     "hack": "^0.8.1",
-    "lazysizes": "^4.1.4",
+    "lazysizes": "^5.3.0",
     "lodash-cli": "^4.17.5",
     "mark.js": "^8.11.1",
-    "standard-version": "^4.4.0",
-    "vue": "^2.5.16"
+    "standard-version": "^9.1.0",
+    "vue": "^2.6.12"
   },
-  "license": "WTFPL"
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "license": "AGPL-3.0-or-later"
 }

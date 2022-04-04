@@ -5,6 +5,10 @@ categories = ["security"]
 slug = "high-tea"
 tags = ["privacy", "networking"]
 features = ["related content", "snippets"]
+[[copyright]]
+  owner = "VHS"
+  date = "2019"
+  license = "agpl-3.0-or-later"
 +++
 
 High Tea pairs {{< external href="https://gitea.io" text="Gitea" />}} with {{< external href="https://traefik.io" text="Traefik" />}} enabling you to manage your source code online using an intuitive and sleek-looking web-based interface:
@@ -19,4 +23,7 @@ Use it to manage organizations, create pull mirrors, selectively mark private re
 
 High Tea also provides a Traefik integration so you can manage web services, monitor traffic and inspect service health in real-time.
 
-**Repository:** {{< external "https://git.habd.as/comfusion/high-tea" />}}
+---
+
+- {{< external "https://codeberg.org/vhs/high-tea" />}} -- source
+- {{< external "https://vhs.codeberg.page/after-dark/extra/high-tea/" />}} -- website

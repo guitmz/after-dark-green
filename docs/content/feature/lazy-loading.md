@@ -4,11 +4,15 @@ description = "Defer loading of images, iframes and scripts."
 categories = ["experience"]
 tags = ["performance", "images", "graphics"]
 features = ["code highlighter", "related content", "snippets"]
+[[copyright]]
+  owner = "VHS"
+  date = "2019"
+  license = "agpl-3.0-or-later"
 +++
 
 After Dark uses {{< external href="https://github.com/aFarkas/lazysizes" text="lazySizes" />}} to prioritize loading of certain external resources to improve page load times and help reduce overall bandwidth consumption.
 
-Lazy loading works automatically for [Post Images](../post-images) and when using the [Figure Shortcode](/shortcode/figure), or related [Snippet](../snippets), as seen here:
+Lazy loading works automatically for [Custom Homepage](../custom-homepage) thumbnails, [Post Images](../post-images) and when using the [Figure Shortcode](/shortcode/figure), or related [Snippet](../snippets), as seen here:
 
 {{< figure
   src="https://source.unsplash.com/Y-w15LfHO8w/5184x3456"
