@@ -1,0 +1,24 @@
+name = "After Dark Green"
+license = "WTFPL"
+licenselink = "https://git.habd.as/comfusion/after-dark/src/branch/master/COPYING"
+description = "A dark, hacker-themed Hugo theme with green accents"
+homepage = "https://after-dark.habd.as/"
+tags = ["blog", "dark", "green", "hack", "minimal", "responsive"]
+features = ["blog", "dark mode", "syntax highlighting", "responsive"]
+min_version = "0.110.0"
+
+[author]
+  name = "Josh Habdas"
+  homepage = "https://habd.as"
+
+[original]
+  name = "comfusion"
+  homepage = "https://git.habd.as/comfusion/after-dark"
+
+[module]
+  [module.hugoVersion]
+    extended = true
+    min = "0.110.0"
+  proxy = "direct"
+  [module.vendor]
+    enabled = false

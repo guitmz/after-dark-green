@@ -97,7 +97,7 @@
       {{/* {{ partial "addthis" . }} */}}
       {{ .Content }}
     </div>
-    {{ if .Site.DisqusShortname }}	
+    {{ if .Site.Params.disqusShortname }}	
       <article>	
         {{ template "_internal/disqus.html" . }}	
       </article>	

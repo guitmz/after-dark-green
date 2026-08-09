@@ -5,8 +5,15 @@
   <header>
     <h1>{{ .Title }}</h1>
   </header>
-  {{ range .Paginator.Pages }}
-    {{ partial "page-summary.html" . }}
+  {{ if eq .Kind "home" }}
+    {{ $posts := where .Site.RegularPages "Type" "post" }}
+    {{ range (.Paginate $posts).Pages }}
+      {{ partial "page-summary.html" . }}
+    {{ end }}
+  {{ else }}
+    {{ range .Paginator.Pages }}
+      {{ partial "page-summary.html" . }}
+    {{ end }}
   {{ end }}
 {{ end }}
 {{ define "footer" }}
