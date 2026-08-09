@@ -8,7 +8,7 @@
     {{ partial "modules/hall-of-mirrors/index.html" (dict "settings" . "page" $.Page) }}
   {{ end }}
   {{ with (default $defaults.toxic_swamp $modules.toxic_swamp) }}
-    {{ partial "modules/toxic-swamp/index.html" (dict "settings" . "data" hugo.Data) }}
+    {{ partial "modules/toxic-swamp/index.html" (dict "settings" .) }}
   {{ end }}
   {{ with $modules.voyeur }}
     {{ partial "modules/voyeur/index.html" . }}

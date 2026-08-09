@@ -10,7 +10,7 @@
       <url>{{ . }}</url>
     </image>{{ end }}
     <ttl>1440</ttl>
-    <generator>{{ with hugo.Data.npm.latest }}{{ .name | humanize | title }} {{ .version }} (Hugo {{ hugo.Version }}){{ else }}Hugo {{ hugo.Version }}{{ end }}</generator>{{ with .Site.Language.Locale }}
+    <generator>Hugo {{ hugo.Version }}</generator>{{ with .Site.Language.Locale }}
     <language>{{ . }}</language>{{ end }}{{ $author := .Site.Params.author }}{{ if $author }}{{ if reflect.IsMap $author }}
     <managingEditor>{{ $author.email }}{{ with $author.name }} ({{ . }}){{ end }}</managingEditor>
     <webMaster>{{ $author.email }}{{ with $author.name }} ({{ . }}){{ end }}</webMaster>{{ else }}

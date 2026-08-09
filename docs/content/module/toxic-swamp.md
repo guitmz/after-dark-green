@@ -59,11 +59,8 @@ Verify [Release Hash]({{< relref "release-hashes" >}}) and GPG signature:
 ```sh
 cd themes/toxic-swamp && \
 npm install && npm run integrity && \
-<<<<<<< HEAD
 git tag --verify v1.0.0-beta.24
-=======
 git tag --verify v1.0.0-beta.26
->>>>>>> upstream/master
 ```
 
 Specify module in site config:
@@ -479,7 +476,6 @@ Generate configuration with `Advanced Settings` specified:
       {{< /hackcss-formgroup >}}
     </details>
   {{< /hackcss-form >}}
-<<<<<<< HEAD
   <script>
     (function (window, document, undefined) {
       const form = document.forms.generator;
@@ -519,8 +515,6 @@ Generate configuration with `Advanced Settings` specified:
       })
     })(window, document);
   </script>
-=======
->>>>>>> upstream/master
 {{< /hackcss-card >}}
 
 Enable debugging to output detailed socket messages from the proxy to the browser console by adding the following to your site config:
@@ -570,7 +564,6 @@ mkdir -p layouts/partials/modules/toxic-swamp/ && \
 cp themes/toxic-swamp/layouts/partials/modules/toxic-swamp/inline.jsonld.html $_
 ```
 
-<<<<<<< HEAD
 Whitelist available `translations` for module in site config using override:
 
 ```toml
@@ -584,6 +577,4 @@ Remove any customizations to return to module defaults.
 
 [^1]: Estimate assumes 50%  {{< external href="https://coinhive.com/info/faq#rev-share" text="non-negotiable" />}} Coinhive mining fee compared with 0% for {{< external href="https://moneroocean.stream/?dark#/help/faq" text="MoneroOcean" />}} and excludes upgrade incentives, hashrate variance, pool and proxy uptime, withdrawal fees and other optimizations.
 
-=======
 Remove config and customizations to return to module defaults.
->>>>>>> upstream/master

@@ -110,13 +110,10 @@ Special thanks to エゴイスト for [hackcss](https://git.habd.as/comfusion/ha
 
 This work is free. You can redistribute it and/or modify it under the
 terms of the Do What The Fuck You Want To Public License, Version 2,
-<<<<<<< HEAD
 as published by Sam Hocevar. See the COPYING file for more details.
 
 ## Acknowledgements
 
 Thanks to Steve Francia for creating the Hugo logo, エゴイスト for hackcss, Dan Klammer for the bytesized SVG icons, Alexander Farkas for killing it with lazySizes, Simon Fremaux for such a groovy 404 background animation and Vincent Prouillet for the [Zola port](https://www.getzola.org/themes/after-dark/).
 
-=======
 as published by Sam Hocevar. The full text of the license is included in the file COPYING in the source.
->>>>>>> upstream/master

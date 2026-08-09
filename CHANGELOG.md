@@ -2,14 +2,10 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 <a name="7.0.3"></a>
 ## [7.0.3](https://git.habd.as/comfusion/after-dark/compare/v7.0.2...v7.0.3) (2019-02-12)
 
 
-=======
-=======
 <a name="7.2.4"></a>
 ## [7.2.4](https://git.habd.as/comfusion/after-dark/compare/v7.2.3...v7.2.4) (2019-04-16)
 
@@ -35,7 +31,6 @@ Fix remaining Hugo warnings masked before last release
 
 
 
->>>>>>> upstream/master
 <a name="7.2.1"></a>
 ## [7.2.1](https://git.habd.as/comfusion/after-dark/compare/v7.2.0...v7.2.1) (2019-02-22)
 
@@ -73,15 +68,11 @@ Fix remaining Hugo warnings masked before last release
 
 
 ### Bug Fixes
->>>>>>> upstream/master
 
 <a name="7.0.2"></a>
 ## [7.0.2](https://git.habd.as/comfusion/after-dark/compare/v7.0.1...v7.0.2) (2019-02-12)
 
-<<<<<<< HEAD
-=======
 * **feature/security:** restore gpg signing of commits and tags
->>>>>>> upstream/master
 
 
 <a name="7.0.1"></a>

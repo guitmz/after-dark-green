@@ -4,5 +4,3 @@ data
 public
 resources
 .go
-.go.mod
-.go.sum
