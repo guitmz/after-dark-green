@@ -97,15 +97,11 @@
       {{/* {{ partial "addthis" . }} */}}
       {{ .Content }}
     </div>
-    {{ if .Site.Params.disqusShortname }}	
-      <article>	
-        {{ template "_internal/disqus.html" . }}	
-      </article>	
-    {{ end }}
     <footer>
       <hr>
       {{ partial "post/byline.html" . }}
       {{ partial "post/related-content.html" . }}
+      {{ partial "external/disqus.html" . }}
     </footer>
   </article>
 {{ end }}
