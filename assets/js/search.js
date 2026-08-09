@@ -1,8 +1,8 @@
 fetchInject([
-  "{{ "/js/vue.min.js" | relURL }}",
-  "{{ "/js/lodash.custom.min.js" | relURL }}",
-  "{{ "/js/fuse.min.js" | relURL }}",
-  "{{ "/js/mark.min.js" | relURL }}"
+  "https://cdn.jsdelivr.net/npm/vue@2.7.14/dist/vue.min.js",
+  "https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js",
+  "https://cdn.jsdelivr.net/npm/@fusejs/fuse@7.0.0/dist/fuse.min.js",
+  "https://cdn.jsdelivr.net/npm/mark.js@8.11.1/dist/mark.min.js"
 ]).then(() => {
   (function (window, document, undefined) {
     'use strict';

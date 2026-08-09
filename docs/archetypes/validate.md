@@ -18,7 +18,7 @@ noindex = true
         placeholder="whUlqT0w6vfvTzd12LpU5kst/Cz3yt9j3ncIHcB4CDQFFiMVPlfX/I+vKl3Y98faqBLlgh6M4pyhiYzZNIPUPA=="
     >}}
     {{< hackcss-helpblock >}}
-      Submit with {{ .Site.Data.npm.latest.version }} <a href="/feature/release-hashes">Release Hash</a> to validate.
+      Submit with {{ hugo.Data.npm.latest.version }} <a href="/feature/release-hashes">Release Hash</a> to validate.
       <noscript>JavaScript required for proper validation.</noscript>
     {{< /hackcss-helpblock >}}
   {{< /hackcss-formgroup >}}
@@ -29,7 +29,7 @@ noindex = true
 <script>
   (function (window, document, undefined) {
     "use strict";
-    const digest = '{{ strings.TrimPrefix "sha512-" .Site.Data.npm.latest.dist.integrity }}';
+    const digest = '{{ strings.TrimPrefix "sha512-" hugo.Data.npm.latest.dist.integrity }}';
     const confirm = form => {
       form.digest.readOnly = true;
       form.digest.value = digest;

@@ -172,7 +172,7 @@
 {{ end }}
 {{ define "main" }}
   <header>
-    <h1>{{ .Title }}<sup class="muted">v{{ .Site.Data.npm.latest.version }}</sup></h1>
+    <h1>{{ .Title }}<sup class="muted">v{{ hugo.Data.npm.latest.version }}</sup></h1>
     <h2 class="muted">Build Fast Websites with Hugo</h2>
   </header>
   {{ .Content }}

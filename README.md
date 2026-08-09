@@ -4,7 +4,7 @@
 
 [![Latest NPM version](https://img.shields.io/npm/v/after-dark.svg?style=flat-square)](https://www.npmjs.com/package/after-dark)
 [![Monthly downloads](https://img.shields.io/npm/dm/after-dark.svg?style=flat-square)](https://www.npmjs.com/package/after-dark)
-[![Minimum Hugo version](https://img.shields.io/badge/hugo->%3D%200.44-FF4088.svg?style=flat-square)](https://gohugo.io)
+[![Minimum Hugo version](https://img.shields.io/badge/hugo->%3D%200.110-FF4088.svg?style=flat-square)](https://gohugo.io)
 [![WTFPL licensed](https://img.shields.io/npm/l/after-dark.svg?style=flat-square&longCache=true)](https://git.habd.as/comfusion/after-dark/src/branch/master/COPYING)
 [![Telegram chat](https://img.shields.io/badge/chat-telegram-32AFED.svg?style=flat-square&longCache=true)](https://t.me/comfusion)
 [![Keybase profile](https://img.shields.io/badge/pm-keybase-4c8eff.svg?style=flat-square&longCache=true)](https://keybase.io/jhabdas)
@@ -76,7 +76,7 @@ Click a screenshot to view a live demo of the functionality.
 
 ## Getting Started
 
-Please [Install Hugo](https://gohugo.io/getting-started/installing) `0.44` or greater before getting started.
+Please [Install Hugo](https://gohugo.io/getting-started/installing) `0.110` or greater before getting started.
 
 ### Installation
 
@@ -110,13 +110,10 @@ Special thanks to エゴイスト for [hackcss](https://git.habd.as/comfusion/ha
 
 This work is free. You can redistribute it and/or modify it under the
 terms of the Do What The Fuck You Want To Public License, Version 2,
-<<<<<<< HEAD
 as published by Sam Hocevar. See the COPYING file for more details.
 
 ## Acknowledgements
 
 Thanks to Steve Francia for creating the Hugo logo, エゴイスト for hackcss, Dan Klammer for the bytesized SVG icons, Alexander Farkas for killing it with lazySizes, Simon Fremaux for such a groovy 404 background animation and Vincent Prouillet for the [Zola port](https://www.getzola.org/themes/after-dark/).
 
-=======
 as published by Sam Hocevar. The full text of the license is included in the file COPYING in the source.
->>>>>>> upstream/master

@@ -52,7 +52,6 @@ configure_theme () {
    echo "Configuring basic After Dark theme settings ..."
    tee "config.toml" > /dev/null <<TOML
 baseurl = "https://domain.example" # Controls base URL sitewide
-languageCode = "en-US" # Controls site language
 title = "After Dark" # Homepage title and page title suffix
 paginate = 11 # Number of posts to show before paginating
 
@@ -62,11 +61,17 @@ theme = [
   "after-dark"
 ]
 
+# Language settings
+[languages.en]
+  locale = "en-US"
+  label = "English"
+
 disableLiveReload = false # Optional, set true to disable live reload
 enableRobotsTXT = true # Suggested, enable robots.txt file
 
-pygmentsCodefences = true # Suggested, highlight fenced code blocks
-pygmentsUseClasses = true # Required for custom syntax highlighting
+[markup.highlight]
+  codeFences = true  # Suggested, highlight fenced code blocks
+  noClasses = false  # Required for custom syntax highlighting
 
 sectionPagesMenu = "main" # Enable menu system for lazy bloggers
 footnoteReturnLinkContents = "↩" # Provides a nicer footnote return link

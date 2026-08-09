@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="{{ .Site.LanguageCode }}">
+<html lang="{{ .Site.Language.Locale | default "en-US" }}">
   <head>
     {{ partial "meta/content-security-policy.html" . }}
-    <meta name="generator" content="{{ with .Site.Data.npm.latest }}{{ .name | humanize | title }} {{ .version }} (Hugo {{ hugo.Version }}){{ else }}Hugo {{ hugo.Version }}{{ end }}">
+    <meta name="generator" content="Hugo {{ hugo.Version }}">
     <meta charset="utf-8">
     <script src="https://use.fontawesome.com/0ae8a400c3.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">

@@ -10,18 +10,19 @@ theme = [
 disableLiveReload = false # Optional, set true to disable live reload
 enableRobotsTXT = true # Suggested, enable robots.txt file
 
-pygmentsCodefences = true # Suggested, highlight fenced code blocks
-pygmentsUseClasses = true # Required for custom syntax highlighting
+[markup.highlight]
+  codeFences = true  # Suggested, highlight fenced code blocks
+  noClasses = false  # Required for custom syntax highlighting
 
 sectionPagesMenu = "main" # Enable menu system for lazy bloggers
 footnoteReturnLinkContents = "↩" # Provides a nicer footnote return link
 
 [languages.en]
-  languageCode = "en-US" # Controls site language
-  languageName = "English"
+  locale = "en-US" # Controls site language
+  label = "English"
 [languages.id]
-  languageCode = "id-ID" # Controls site language
-  languageName = "Indonesia"
+  locale = "id-ID" # Controls site language
+  label = "Indonesia"
 
 [outputs]
   home = ["HTML", "RSS", "JSON"]
